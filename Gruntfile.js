@@ -12,7 +12,7 @@ module.exports = function(grunt){
             },
             build: {
                 src: 'kp/src/kpSliderClone.js',
-                dest: 'kp/src/kpsliderCloner.min.js'
+                dest: 'kp/src/kpSliderClone.min.js'
             }
         }
     });
