@@ -10,10 +10,9 @@ module.exports = function(grunt){
             options: {
                 banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
             },
-            //任务名称
-            yasuojs: {
-                src: 'src/kpSliderClone.js',
-                dest: 'build/kpSliderClone.min.js'
+            build: {
+                src: 'kp/src/kpSliderClone.js',
+                dest: 'kp/src/kpsliderCloner.min.js'
             }
         }
     });
