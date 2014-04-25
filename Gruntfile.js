@@ -7,10 +7,12 @@ module.exports = function(grunt){
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {
-
+            options: {
+                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+            },
             build: {
-                src: 'src/kp/src/kpSliderClone.js',
-                dest: 'src/kp/src/kpsliderCloner.min.js'
+                src: 'kp/src/kpSliderClone.js',
+                dest: 'kp/src/kpsliderCloner.min.js'
             }
         }
     });
